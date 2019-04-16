@@ -15,13 +15,13 @@ namespace GarysGarage {
             */
             //List<Zero> electricVehicles = new List<Zero> () { fx, fxs, modelS };
 
-            List<IElectricPowered> electricVehicles = new List<IElectricPowered>();
+            List<IElectricPowered> electricVehicles = new List<IElectricPowered> ();
 
-            electricVehicles.Add(fx);
-            electricVehicles.Add(fxs);
-            electricVehicles.Add(modelS);
+            electricVehicles.Add (fx);
+            electricVehicles.Add (fxs);
+            electricVehicles.Add (modelS);
 
-            electricVehicles.ForEach(gv => gv.ChargeBattery());
+            electricVehicles.ForEach (gv => gv.ChargeBattery ());
 
             /*
                 Create some gas vehicles, add them to a List
@@ -31,11 +31,15 @@ namespace GarysGarage {
             Ram ram = new Ram ();
             Cessna cessna150 = new Cessna ();
 
-            List<IGasPowered> gasVehicles = new List<IGasPowered>() {
-                ram, cessna150
+            List<IGasPowered> gasVehicles = new List<IGasPowered> () {
+                ram,
+                cessna150
             };
 
-            gasVehicles.ForEach(gv => gv.RefuelTank());
+            gasVehicles.ForEach (gv => gv.RefuelTank ());
+            fxs.Drive ();
+            modelS.Drive ();
+            fx.Drive ();
         }
     }
 }
