@@ -7,5 +7,8 @@ namespace GarysGarage {
         public void RefuelTank () {
             Console.WriteLine ("Refill the Gas tank");
         }
+        public override void Drive() {
+            Console.WriteLine($"The {Color} Cessna zips by you. zzzzzzooooooommmmmmmmmmmmm");
+        }
     }
 }

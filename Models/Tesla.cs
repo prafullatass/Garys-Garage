@@ -8,7 +8,7 @@ namespace GarysGarage {
             Console.WriteLine ("Battery is fully charged");
         }
         public override void Drive () {
-            Console.WriteLine ("Zoooooom!");
+            Console.WriteLine ($"The {Color} Tesla zips by you. Mmmmmmmmmmmmmm!");
         }
     }
 

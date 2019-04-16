@@ -7,7 +7,9 @@ namespace GarysGarage {
             Zero fxs = new Zero ();
             Zero fx = new Zero ();
             Tesla modelS = new Tesla ();
-
+            fxs.Color = "Midnight Blue";
+            fx.Color = "Red";
+            modelS.Color = "Black";
             /*
                 This can only hold individual motorcycles. You can't
                 add the Tesla to this list. It's a different type.
@@ -29,7 +31,9 @@ namespace GarysGarage {
                 fuel tanks.
             */
             Ram ram = new Ram ();
+            ram.Color = "Silver";
             Cessna cessna150 = new Cessna ();
+            cessna150.Color = "Maroon";
 
             List<IGasPowered> gasVehicles = new List<IGasPowered> () {
                 ram,
@@ -40,6 +44,8 @@ namespace GarysGarage {
             fxs.Drive ();
             modelS.Drive ();
             fx.Drive ();
+            ram.Drive();
+            cessna150.Drive();
         }
     }
 }
