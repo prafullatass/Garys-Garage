@@ -10,5 +10,11 @@ namespace GarysGarage {
         public override void Drive() {
             Console.WriteLine($"The {Color} Cessna zips by you. zzzzzzooooooommmmmmmmmmmmm");
         }
+        public override void Turn(string direction) {
+            Console.WriteLine($"The {Color} Cessna easily turn {direction}");
+        }
+        public override void Stop() {
+            Console.WriteLine($"The {Color} Cessna rolls away for a mile and stops");
+        }
     }
 }

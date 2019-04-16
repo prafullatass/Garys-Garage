@@ -10,5 +10,11 @@ namespace GarysGarage {
          public override void Drive() {
              Console.WriteLine($"The {Color} Zero zips by you. Yeeeeeeeeeeoooooooowwwwwwww");
          }
+         public override void Turn(string direction) {
+             Console.WriteLine($"The {Color} Zero silently tuned {direction}");
+         }
+         public override void Stop() {
+             Console.WriteLine($"The {Color} Zero gently rolls to stop");
+         }
     }
 }

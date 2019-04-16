@@ -10,6 +10,12 @@ namespace GarysGarage {
         public override void Drive () {
             Console.WriteLine ($"The {Color} Tesla zips by you. Mmmmmmmmmmmmmm!");
         }
+        public override void Turn(string direction) {
+            Console.WriteLine($"The {Color} Tesla squeals around on {direction} turn");
+        }
+        public override void Stop() {
+            Console.WriteLine($"The {Color} Tesla as it is never moved");
+        }
     }
 
 }

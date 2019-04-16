@@ -42,10 +42,26 @@ namespace GarysGarage {
 
             gasVehicles.ForEach (gv => gv.RefuelTank ());
             fxs.Drive ();
+            fxs.Turn("Left");
+            fxs.Stop();
+
             modelS.Drive ();
+            modelS.Turn("Left");
+            modelS.Stop();
+
             fx.Drive ();
+            fx.Turn("Right");
+            fx.Stop();
+
             ram.Drive();
+            ram.Turn("Left");
+            ram.Stop();
+
             cessna150.Drive();
+            cessna150.Turn("Left");
+            cessna150.Stop();
+
+
         }
     }
 }
